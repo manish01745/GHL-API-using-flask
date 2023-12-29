@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    main {
+      padding: 2rem 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Roboto, sans-serif;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .box1 {
+         border: 3px solid rgba(0,0,0,.1); 
+        border-radius: 4px;
+        /* transition: border-color .1s ease-in-out; */
+        border: 3px solid rgba(0,0,0,.1);
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 500px;
+      cursor: pointer;
+    }
+    .panel1 {
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: normal;
+        word-break: break-word;
+        padding: 0;
+        background: 0 0;
+        border: none;
+        position: relative;
+    }
+    
+     h4{
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 400;
+      position: relative;
+      font-size: 14px;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+    
+    .panel-title1, .pricing-list1{
+      border-bottom: 1px solid #0000001a;
+    }
+    .pricing-list1, .pricing-total1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .pricing-total1 h4{
+       font-size: 18px; 
+      font-weight: 700;
+    }
+    </style>
+<body>
+    <main>
+        <div class="container2">
+          <div class="box1">
+            <div class="pannel11">
+              <h4 class="panel-title1">$7/month</h4>
+              <div class="pricing-list1">
+                <div class="Subtotal1">
+                  <h4>Subtotal</h4>
+                </div>
+                <div class="price1">
+                  <h4>USD 7.00 monthly</h4>
+                </div>
+              </div>
+    
+              <div class="pricing-total1">
+                <div class="Subtotal1">
+                  <h4>TO PAY TODAY</h4>
+                </div>
+                <div class="price1">
+                  <h4>USD 7.00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+
+<script>
+    const price = document.querySelector('.pricing-total1');
+  const subtotal = document.querySelector('.pricing-list1');
+  const box = document.querySelector('.box1');
+  price.style.display="none";
+  subtotal.style.border="none";
+  
+  box.addEventListener('click',()=>{
+    price.style.display="flex";
+    subtotal.style.borderBottom="1px solid #ccc";
+    box.style.borderColor="#39b9dd";
+  
+  })
+  </script>
+</html>
+
+   

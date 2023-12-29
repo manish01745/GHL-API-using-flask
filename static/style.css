@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+body {
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+}
+#contact h3 {
+    color: #000;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+  padding:0px 0px 15px 0px;
+}
+.container {
+    max-width:400px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    padding: 20px 30px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
+    border-radius: 10px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { 
+    font:400 14px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+    background:fade(#F9F9F9,85);
+    margin:20px 20px 20px 0px;
+}
+
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#contact textarea {
+    height:100px;
+    max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+    cursor:pointer;
+    max-width:100%;
+    border:none;
+    background:#c4ab6e;
+    color:#FFF;
+    margin:0 0 5px;
+    padding:12px 25px;
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+#contact button:hover {
+    background:#000000;
+    transition:background-color 0.3s ease-in-out;
+    color: #fff;
+}
+
+#contact button
+#contact input:focus, #contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+
+label.error{
+    color: darkred;
+    padding-left: 10px;
+    font-weight: bold;
+}
+input.error{
+    border-color: darkred !important;
+}

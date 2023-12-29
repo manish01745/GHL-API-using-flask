@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="" method="post">
+            <h3>Contact Form</h3>
+            <fieldset>
+                <input placeholder="Full Name" type="text" tabindex="1" name="name" id="name" value="{{ contact.contact.firstName }}{{ contact.contact.lastName }}" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email Address" type="email" tabindex="2" name="email" id="email" value="{{ contact.contact.email }}" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Phone Number" type="tel" tabindex="3" name="phone" id="phone" value="{{ contact.contact.phone }}" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="City" type="text" tabindex="5" name="city" value="{{ contact.contact.city }}" id="city">
+            </fieldset>
+            <fieldset>
+                <input placeholder="State" type="text" tabindex="6" name="state" value="{{ contact.contact.state }}" id="state">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Postal Code" type="text" tabindex="7" name="postalCode" value="{{ contact.contact.postalCode }}" id="postalCode">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Website" type="url" tabindex="8" value="{{ contact.contact.website }}"name="website" id="website">
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send now</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
+
